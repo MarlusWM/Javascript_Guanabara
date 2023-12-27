@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-color: gray;
+    color: rgb(0, 39, 88);
+}
+
+input{
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}

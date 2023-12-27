@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERC AULA 009</title>
+    <link rel="stylesheet" href="style009.css">
+    <link rel="stylesheet" href="link.js">
+    
+</head>
+<body>
+    <header><h1>IDENTIFICADOR DE NACIONALIDADE</h1></header>
+    <main>
+        <article>
+            <h1>Insira sua nacionalidade </h1>
+            <input type="text" name="txtnac" id="txtnac">
+            <input type="button" value="Conferir" onclick="conferir()">
+
+            <div><h2 id="resposta"></h2></div>
+        </article>
+    </main>
+    <footer></footer>
+    <script>
+        function conferir() {
+            var nacionalidade = document.querySelector('input#txtnac').value
+            var resnac = document.querySelector('h2#resposta')
+
+            if (nacionalidade.toLowerCase() === 'brasileiro') {
+                resnac.innerHTML = 'Você é BRASILEIRO'
+            } else {
+                resnac.innerHTML = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

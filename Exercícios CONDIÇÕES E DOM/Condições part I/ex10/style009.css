@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+header {
+    border: 10px solid black;
+    text-align: center;
+    background: radial-gradient(yellow, green);
+}
+
+article {
+    text-align: center;
+}
